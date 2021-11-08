@@ -5,200 +5,7 @@
   --main-theme: #ffc424;
   --second-theme: #2454ff;
 }
-header {
-  background-color: var(--pure-background);
-  height: 130px;
-  padding: 30px;
-  padding-right: 141px;
-  padding-left: 141px;
-}
 
-.logo {
-  flex: 1;
-  display: flex;
-}
-
-.logoimg {
-  margin-right: 8.6px;
-}
-.textlogo {
-  margin-right: 30px;
-}
-
-.logoimg img {
-  height: 80px;
-}
-
-.textlogo img {
-  height: 69px;
-}
-
-.TopHeader {
-  flex: 1;
-  display: flex;
-  float: right;
-  position: absolute;
-  top: 3%;
-  right: 5%;
-}
-
-.Search {
-  position: relative;
-  background-color: #ffffff;
-  right: 30%;
-  width: 600px;
-  height: 50px;
-  border-radius: 27px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.Search input {
-  all: unset;
-  font: 16px system-ui;
-  color: #707070;
-  height: 100%;
-  width: 100%;
-  padding: 6px 10px;
-}
-
-::placeholder {
-  color: #707070;
-  opacity: 0.7;
-}
-
-.Search button {
-  all: unset;
-  cursor: pointer;
-  width: 50px;
-}
-
-.Search button svg {
-  color: #292929;
-  fill: currentColor;
-  width: 24px;
-  padding: 10px;
-}
-
-.SignIn {
-  background-color: var(--background-shade);
-  padding: 10px;
-  border-radius: 100px;
-  position: relative;
-  right: 150%;
-}
-
-.account {
-  width: 31px;
-}
-.signicon {
-  width: 68px;
-  margin-left: 5px;
-}
-
-.cart {
-  padding: 12px;
-  width: 35px;
-}
-
-.cartholder {
-  background-color: var(--background-shade);
-
-  border-radius: 40px;
-  position: relative;
-  bottom: 55px;
-  right: 50px;
-  width: 63px;
-}
-
-.meny {
-  width: 39px;
-}
-
-.menyholder {
-  position: relative;
-  bottom: 100px;
-  left: 30px;
-}
-
-nav {
-  flex: 1;
-  display: flex;
-  position: relative;
-  top: 19%;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-@media (max-width: 2000px) {
-  ul li a {
-    padding-top: 13px;
-    padding-bottom: 13px;
-    margin-right: 10px;
-    width: 350px;
-    text-align: center;
-    border-radius: 10px 10px 0px 0px;
-  }
-  li {
-    width: 208px;
-    margin-right: 5px;
-  }
-}
-
-.small {
-  width: 208px;
-}
-
-.sell {
-  width: 208px;
-  background-color: var(--main-theme);
-}
-
-.plus {
-  background-color: var(--second-theme);
-}
-
-a {
-  background-color: var(--background-shade);
-  padding-top: 17px;
-  padding-bottom: 17px;
-  margin-right: 10px;
-  width: 350px;
-  text-align: center;
-  border-radius: 10px 10px 0px 0px;
-
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  transition: 0.2s;
-  background-color: white;
-  color: black;
-}
-
-.plus:hover {
-  transition: 0.2s;
-  background-color: #0028b3;
-  color: white;
-}
-.sell:hover {
-  transition: 0.2s;
-  background-color: #b3860c;
-  color: white;
-}
 
 body {
   background-color: var(--background-color);
@@ -209,59 +16,57 @@ body {
   color: white;
 }
 
+main{
+  grid-template-areas:
+  "new . rec"
+  "new . ."
+  ". . bestseller";
+}
+
 .NewReleases {
-  flex: 1;
-  display: flex;
+  grid-area: new;
   margin-left: 150px;
   font-size: 3.8rem;
   font-weight: 800;
-  position: absolute;
-  top: 200px;
+  width:30%;
+  height: 45%;
 }
 
 .MainGame {
-  position: relative;
-  margin-top: 8.5%;
-  right: 28.5%;
-  
-}
+  }
 
 .MainGameImg {
-  width: 70%;
+  width: 100%;
   cursor: pointer;
 }
 
 .ArrowRight{
   cursor: pointer;
-position: absolute;
-top: 38%;
-margin-left: 62%;
+  position: absolute;
+  width: 3%;
+  /* transform: translateY(400%); */
 }
 
 .ArrowLeft{
   cursor: pointer;
   position: absolute;
-  top: 38%;
-  margin-left: 1.5%;
+  width: 3%;
+  /* transform: translateY(400%); */
 }
 
-.MainGame button {
+.game_tab{
   display: flex;
-  flex-direction: row;
+  height: 9%;
 }
 
 .GameName {
-  width: 70%;
-  height: 8.1%;
-
+  width: 100%;
   align-items: center;
-
   color: white;
   background-color: #0d0d0d;
   border-width: 0px;
-
-  padding-left: 20px;
-  font-size: 40px;
+  text-align: left;
+  font-size:2.5rem;
   cursor: pointer;
 }
 
@@ -269,15 +74,10 @@ margin-left: 62%;
   background-color: var(--background-shade);
 }
 
-.GamePrice {
-  position: relative;
-  left: 62.1%;
-  bottom: 8.1%;
-  width: 100px;
-  height: 80px;
-  align-items: center;
-  padding-left: 16px;
 
+.GamePrice {
+  width: 100px;
+  align-items: center;
   color: white;
   font-size: 40px;
   background-color: var(--second-theme);
@@ -287,59 +87,55 @@ margin-left: 62%;
 
 
 .Recommended {
-  margin-top: 170px;
-  margin-left: 1100px;
+  /* margin-top: 170px; */
+  /* margin-left: 1100px; */
+  grid-area: rec;
   font-size: 2.6rem;
   font-weight: 800;
   color: var(--main-theme);
 
 }
 
-.ReccRow{
+.rec_row{
   flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: left;
 }
 
-.GameOne{
-  margin-right: 20px;
-}
-
-.GameOne button {
+.small_game_tab{
   display: flex;
-  flex-direction: row;
+  height: 20%;
 }
 
-.GameOne img{
-  width: 300px;
+.game_one{
+  margin-right: 5px;
 }
 
-.RowGamePrice{
+.game_one button {
+  /* display: flex; */
+  /* flex-direction: row; */
+}
+
+.game_one img{
+  width: 200px;
+}
+
+.row_game_price{
   align-items: center;
   padding-left: 10px;
-
-  width: 55px;
-  height: 50px;
-
+  padding-right: 10px;
   color: white;
   font-size: 20px;
   background-color: var(--second-theme);
   border-width: 0px;
   cursor: pointer;
-
-  position: relative;
-  bottom: 50px;
-  left: 245px;
 }
 
-.RowGameName{
+.row_game_name{
   align-items: center;
+  width: 100%;
   padding-left: 10px;
-
-  width: 250px;
-  height: 50px;
-
   color: white;
   font-size: 20px;
   background-color: #0d0d0d;
@@ -347,18 +143,19 @@ margin-left: 62%;
   cursor: pointer;
 }
 
-.RowGameName:hover {
+.row_game_name:hover {
   background-color: var(--background-shade);
 }
 
-.Bestseller {
-  margin-left: 1100px;
+.bestseller {
+  grid-area: bestseller;
+  /* margin-left: 1100px; */
   font-size: 2.6rem;
   font-weight: 800;
   color: white;
 }
 
-.BestSRow{
+.best_row{
   flex: 1;
   display: flex;
   flex-direction: row;

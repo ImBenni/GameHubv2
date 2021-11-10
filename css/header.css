@@ -1,21 +1,15 @@
 header {
     background-color: var(--pure-background);
-    height: 130px;
+    /* height: 130px; */
     padding: 30px;
-    padding-right: 141px;
-    padding-left: 141px;
   }
   
   .logo {
-    flex: 1;
     display: flex;
   }
   
   .logoimg {
-    margin-right: 8.6px;
-  }
-  .textlogo {
-    margin-right: 30px;
+    margin-right: 1%;
   }
   
   .logoimg img {
@@ -27,12 +21,11 @@ header {
   }
   
   .TopHeader {
-    flex: 1;
     display: flex;
     float: right;
-    position: absolute;
-    top: 3%;
-    right: 5%;
+    position: relative;
+    bottom: 55%;
+    
   }
   
   .Search {
@@ -73,14 +66,21 @@ header {
     width: 24px;
     padding: 10px;
   }
+
+  .TopButtons{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      right: 20%;
+  }
   
   .SignIn {
     background-color: var(--background-shade);
     padding: 10px;
     border-radius: 100px;
-    position: relative;
-    right: 150%;
     display: flex;
+    margin-right: 8%;
   }
   
   .account {
@@ -88,7 +88,7 @@ header {
   }
   .signicon {
     width: 68px;
-    margin-left: 5px;
+    margin-left: 8px;
   }
   
   .cart {
@@ -98,12 +98,10 @@ header {
   
   .cartholder {
     background-color: var(--background-shade);
-  
     border-radius: 40px;
-    position: relative;
-    bottom: 55px;
-    right: 50px;
-    width: 63px;
+    width: 50%;
+    display: flex;
+    margin-right: 8%;
   }
   
   .meny {
@@ -111,9 +109,7 @@ header {
   }
   
   .menyholder {
-    position: relative;
-    bottom: 100px;
-    left: 30px;
+    margin-right: 5%;
   }
   
   nav {
@@ -155,7 +151,7 @@ header {
   }
   @media (max-width: 1500px){
     .Search {
-    width: 450px;
+    /* width: 450px; */
     }
   }
   

@@ -1,0 +1,211 @@
+@media screen and (max-width: 800px) {
+  main {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: auto 1fr auto;
+    margin: 1% 0px 6% 0px;
+    grid-template-areas:
+      "pTop pTop pTop"
+      "pMid pMid pMid"
+      "pBot pBot pBot";
+  }
+  body {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      "headerarea headerarea headerarea"
+      "mainarea mainarea mainarea"
+      "footerarea footerarea footerarea";
+  }
+
+  header {
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  footer {
+    position: sticky;
+  }
+
+  .product_description {
+    display: none;
+  }
+
+  .return_line {
+    display: none;
+  }
+
+  .gallery_page {
+    display: none;
+  }
+
+  .product_info {
+    display: none;
+  }
+
+  .phone_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
+  }
+
+  .phone_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
+  }
+  .phone_header a {
+    text-align: center;
+  }
+
+  .phone_header img {
+    width: 50%;
+  }
+
+  .phone_logo {
+    width: 20%;
+  }
+
+  .top_header {
+    display: none;
+  }
+  .main_buttons {
+    display: none;
+  }
+
+  .phone_top_frame {
+    display: inline;
+    grid-area: pTop;
+  }
+
+  .phone_product {
+    position: relative;
+    bottom: 10px;
+  }
+
+  .phone_product_background {
+    width: 100%;
+    max-height: 100%;
+    z-index: -2;
+  }
+
+  .phone_game_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 15%;
+  }
+  .phone_game_info img {
+    width: 25%;
+    margin-right: 6%;
+  }
+
+  .phone_game_info h1 {
+    font-size: 6vw;
+  }
+
+  .phone_line {
+    position: relative;
+    bottom: 6%;
+    background-color: #000000;
+    width: 100%;
+    height: 3px;
+  }
+
+  .phone_description {
+    display: flex;
+    grid-area: pMid;
+    flex-direction: column;
+    
+  }
+  .phone_desc_text{
+    padding: 0 6%;
+  }
+
+  .phone_desc_text h1{
+    font-size: 6vw;
+    font-weight: 500;
+}
+
+.phone_desc_text h2{
+    position: relative;
+    bottom: 5%;
+    font-size: 4vw;
+    font-weight: 300;
+}
+
+.phone_line2 {
+    position: relative;
+    bottom: 0%;
+    background-color: #000000;
+    width: 100%;
+    height: 3px;
+  }
+
+  .phone_gallery {
+    display: inline;
+    grid-area: pBot;
+  }
+
+  .phone_gallery h1{
+    padding-left: 4%;
+    font-size: 5vw;
+  }
+
+  .phone_small_gallery{
+      display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .phone_small_gallery img{
+    width: 45%;
+    margin: 1% 2% 0 0;
+  }
+
+  .phone_buy_section{
+      /* grid-area: pBuy; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #292929;
+        width: 100%;
+        height: 120px;
+  }
+
+  .phone_buy_section h2{
+    margin-right: 10%;
+    font-size: 8vw;
+  }
+
+  .phone_sell{
+    background-color: transparent;
+    padding: 2%;
+    width: 25%;
+    color: white;
+    border-style: solid;
+    border-color: var(--second-theme);
+    font-size: 4.5vw;
+    border-radius: 10px;
+    border-width: 5px;
+    margin-right: 3%;
+  }
+
+  .phone_buy{
+    background-color: var(--second-theme);
+    padding: 2%;
+    width: 25%;
+     color: white;
+     border-color: transparent;
+     font-size: 4.5vw;
+     border-radius: 10px;
+     border-width: 5px;
+     margin-right: 3%;
+  }
+
+}

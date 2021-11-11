@@ -1,0 +1,49 @@
+:root {
+  --pure-background: #0d0d0d;
+  --background-color: #1d1d1d;
+  --background-shade: #292929;
+  --main-theme: #ffc424;
+  --second-theme: #2454ff;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto; 
+  grid-template-columns: auto 1fr auto; 
+  color: white;
+  min-height: 100%;
+
+
+  grid-template-areas: 
+  'headerarea headerarea headerarea'
+  '. mainarea  .'
+  'footerarea footerarea footerarea';
+}
+
+header {
+  grid-area: headerarea;
+  background-color: var(--pure-background);
+  padding: 26px
+  /* grid-column: 1/4;
+  grid-row: 1/1; */
+}
+
+main {
+  grid-area: mainarea;
+}
+
+footer {
+  grid-area: footerarea;
+  position: relative;
+  bottom: 0;
+  background-color: var(--pure-background);
+}
+
+.copyright{
+    display: flex;
+    margin: 3%;
+    justify-content: center;
+}

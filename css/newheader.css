@@ -7,6 +7,7 @@
 }
 
 .logo {
+  cursor: pointer;
   display: flex;
   /* background-color: red; */
 }
@@ -71,6 +72,7 @@
   display: flex;
   margin-right: 5%;
   justify-content: center;
+  cursor: pointer;
 }
 
 .account {
@@ -84,6 +86,7 @@
 }*/
 
 .cartholder {
+  cursor: pointer;
   background-color: var(--background-shade);
   border-radius: 100px;
   display: flex;
@@ -128,13 +131,14 @@ nav ul {
 nav ul li {
   background-color: var(--background-shade);
   border-radius: 10px 10px 0px 0px;
-  font-size: 1rem;
+  font-size: 0.80vw;
   margin-right: 1%;
   font-weight: 600;
   max-width: 100%;
   width: 300px;
   padding: 10px 0px;
   text-align: center;
+  cursor: pointer;
 }
 
 nav ul li a {
@@ -178,9 +182,6 @@ nav ul li:hover {
 }
 
 
-@media screen and (max-width: 600px) {
-  
-}
 
 @media screen and (max-width: 1070px) {
   nav ul{
@@ -192,7 +193,7 @@ nav ul li:hover {
     padding: 0px 0px;
   }
   nav ul li a{
-    font-size: .4rem;
+    /* font-size: .4rem; */
   }
 }
 
@@ -217,7 +218,7 @@ nav ul li:hover {
     padding: 0px 0px;
   }
   nav ul li a{
-    font-size: .5rem;
+    /* font-size: .5rem; */
   }
 }
 
@@ -233,7 +234,7 @@ nav ul li:hover {
   nav ul li{
     padding: 10px 0px;
     width: 200px;
-    font-size: 0.8vw;
+    /* font-size: 0.8vw; */
   }
   .small{
   width: 100px;
@@ -242,3 +243,10 @@ nav ul li:hover {
     width: 100px;
   }
 }
+@media screen and (min-width: 2700px) {
+  nav ul li a{
+    font-size: 1.2rem; 
+  }
+}
+
+

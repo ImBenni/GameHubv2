@@ -1,0 +1,44 @@
+main {
+    display: grid;
+    grid-template-rows: 100px 100% auto;
+    grid-template-columns: auto 80% auto;
+    grid-template-areas:
+      ". return ."
+      ". main-box ."
+      ". . .";
+  }
+  
+  .phone_bottom {
+    display: none;
+  }
+  
+  .return_line {
+    grid-area: return;
+  
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    /* background-color: chartreuse; */
+    margin-top: 2.5%;
+    height: 20%;
+  }
+  
+  .return_arrow {
+    max-width: 45px;
+    margin-right: 10px;
+  }
+  
+  .return_line h2 {
+    font-size: 2vw;
+    font-weight: 500;
+    padding-right: 1%;
+  }
+  
+  .line {
+    background-color: #0d0d0d;
+    max-width: 80%;
+    width: 70%;
+    height: 8px;
+    margin-left: 10px;
+  }

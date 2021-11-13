@@ -144,7 +144,7 @@ main{
   background-color: var(--background-shade);
 }
 
-.bestseller {
+.bestseller-section {
   grid-area: bestseller;
   font-size: 2.6rem;
   font-weight: 800;

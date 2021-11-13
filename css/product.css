@@ -10,35 +10,34 @@ main {
 }
 
 @media screen and (max-width: 1025px) {
-    main{
-        grid-template-rows: 10% 70% 10%;
-        margin: 0px 0px 0px 0px;
-    }
-    .return_line{
-        margin-top: 3%;
-        max-height: 40%;
-    } 
+  main {
+    grid-template-rows: 10% 70% 10%;
+    margin: 0px 0px 0px 0px;
+  }
+  .return_line {
+    margin-top: 3%;
+    max-height: 40%;
+  }
 
-    body {
-        grid-template-rows: 169px 60% auto; 
-    }
+  body {
+    grid-template-rows: 169px 60% auto;
+  }
 }
 
 @media screen and (max-width: 1441px) {
-    main{
-        grid-template-rows: 10% 70% 10%;
-        margin: 0px 0px 0px 0px;
-    }
-    .return_line{
-        margin-top: 2%;
-        max-height: 40%;
-    } 
+  main {
+    grid-template-rows: 10% 70% 10%;
+    margin: 0px 0px 0px 0px;
+  }
+  .return_line {
+    margin-top: 2%;
+    max-height: 40%;
+  }
 
-    body {
-        grid-template-rows: 169px 1fr auto;
-    }
-
-} 
+  body {
+    grid-template-rows: 169px 1fr auto;
+  }
+}
 
 .return_line {
   grid-area: return;
@@ -48,8 +47,7 @@ main {
   justify-content: left;
   flex-direction: row;
   /* background-color: chartreuse; */
-    height: 60%;
-
+  height: 60%;
 }
 
 .return_arrow {
@@ -111,62 +109,61 @@ main {
 
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
 }
 
-.info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    background-color: #0c0c0c;
-    height: 95%;
-    width: 90%;
-    margin: 0 5%;
-    border-radius: 50px;
+  background-color: #0c0c0c;
+  height: 95%;
+  width: 90%;
+  margin: 0 5%;
+  border-radius: 50px;
 }
 
 .info h2 {
   font-size: 3vw;
 }
 
-.info_line{
-    justify-content: center;
-    background-color: #313131;
-    height: 7px;
-    width: 80%;
-
+.info_line {
+  justify-content: center;
+  background-color: #313131;
+  height: 7px;
+  width: 80%;
 }
 
 .info h1 {
-    position: relative;
-    bottom: 3%;
-    font-size: 5vw;
+  position: relative;
+  bottom: 3%;
+  font-size: 5vw;
 }
 
 .info button {
-font-size: 2.3vw;
-background-color: var(--second-theme);
-border-width: 0;
-border-radius: 50px;
-color: white;
-padding: 4% 10%;
+  font-size: 2.3vw;
+  background-color: var(--second-theme);
+  border-width: 0;
+  border-radius: 50px;
+  color: white;
+  padding: 4% 10%;
 
-position: relative;
-bottom: 50px;
-cursor: pointer;
+  position: relative;
+  bottom: 50px;
+  cursor: pointer;
 }
 
-.info button:hover{
-    background-color: #1d45d1;
+.info button:hover {
+  background-color: #1d45d1;
 }
 
-.info img{
-    width: 70%;
+.info img {
+  width: 70%;
 }
 
 .product_description {
-  margin-top: 20px;
+  margin-top: 3%;
   grid-area: desc;
   display: flex;
   align-items: center;
@@ -192,27 +189,26 @@ cursor: pointer;
   margin-left: 10px;
 }
 
-.phone_bottom{
-    display: none;
-
+.phone_bottom {
+  display: none;
 }
 
-.phone_header{
-    display: none;
+.phone_header {
+  display: none;
 }
 
-.phone_top_frame{
-    display: none;
+.phone_top_frame {
+  display: none;
 }
 
-.phone_description{
-    display: none;
+.phone_description {
+  display: none;
 }
 
-.phone_gallery{
-    display: none;
+.phone_gallery {
+  display: none;
 }
 
-.phone_buy_section{
-    display: none;
+.phone_buy_section {
+  display: none;
 }

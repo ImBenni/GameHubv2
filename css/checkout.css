@@ -1,0 +1,424 @@
+main {
+  display: grid;
+  grid-template-rows: 8% 85% auto;
+  grid-template-columns: auto 85% auto;
+  grid-template-areas:
+    ". return ."
+    ". main-box ."
+    ". . .";
+}
+
+.phone_bottom {
+  display: none;
+}
+
+
+.main-box {
+  grid-area: main-box;
+  display: grid;
+  grid-template-areas:
+    "product product summary"
+    "product product summary"
+    "method . summary";
+
+  background-color: #0c0c0c;
+  border-radius: 70px;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 100px 100% auto;
+  grid-template-columns: auto 80% auto;
+  grid-template-areas:
+    ". return ."
+    ". main-box ."
+    ". . .";
+}
+
+.phone_bottom {
+  display: none;
+}
+
+.return_line {
+  grid-area: return;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  /* background-color: chartreuse; */
+  margin-top: 4%;
+  height: 20%;
+}
+
+.return_arrow {
+  max-width: 45px;
+  margin-right: 10px;
+}
+
+.return_line h2 {
+  font-size: 2vw;
+  font-weight: 500;
+  padding-right: 1%;
+}
+
+.line {
+  background-color: #0d0d0d;
+  max-width: 80%;
+  width: 70%;
+  height: 8px;
+  margin-left: 10px;
+}
+
+.product-line {
+  display: flex;
+  flex-direction: column;
+  grid-area: product;
+  justify-content: left;
+  width: 100%;
+}
+
+.top-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: spac;
+  margin: 2% 2% 1% 5%;
+}
+
+.text-game {
+  font-size: 1.1vw;
+  font-weight: 400;
+  position: relative;
+  left: 200px;
+}
+.text-quantity {
+  font-size: 1.1vw;
+  font-weight: 400;
+  position: relative;
+  left: 50%;
+}
+.text-price {
+  font-size: 1.1vw;
+  font-weight: 400;
+  position: relative;
+  left: 65%;
+}
+
+.product-game {
+  margin: 0 5% 2% 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #161616;
+  border-radius: 20px;
+}
+
+.product-game h1 {
+  font-size: 1.3vw;
+  position: relative;
+  right: 15%;
+}
+
+.quantity {
+  position: relative;
+  right: 10%;
+  display: flex;
+}
+
+.quantity h4 {
+  border-style: solid;
+  border-width: 3px;
+  padding: 10px;
+  border-radius: 100px;
+  margin: 30%;
+  border-color: var(--main-theme);
+  font-size: 1.5vw;
+}
+
+.quantity h5 {
+  font-size: 1vw;
+}
+
+.product-game h2 {
+  font-size: 1.3vw;
+  position: relative;
+  right: 10%;
+}
+
+.summary {
+  grid-area: summary;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 5%;
+  margin: 0 5%;
+}
+
+.total{
+    display: flex;
+    flex-direction: column;
+    background-color: #161616;
+    margin: 5% 5% 0 5%;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.total-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+    font-size: 1vw;
+}
+
+.discount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5%;
+}
+.discount input{
+    background-color: transparent;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #4D4D4D;
+    padding: 2%;
+    height: 60px;
+    width: 60%;
+    font-size: 1vw;
+    border-width: 3px;
+    color: #4D4D4D;
+}
+
+.discount button{
+    background-color: transparent;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #4D4D4D;
+    color: #4D4D4D;
+    font-weight: 700;
+    padding: 2%;
+    height: 60px;
+    width: 23%;
+    border-width: 3px;
+    font-size: 1vw;
+}
+
+.credit-info{
+    position: relative;
+    top: -5px;
+    background-color: #101010;
+    margin: 0 5%;
+    height: 50%;
+    border-radius: 0 0 20px 20px;
+}
+
+.credit-info form{
+    margin: 5%;
+}
+
+.credit-name p{
+font-size: 1vw;
+margin-bottom: 2%;
+}
+
+.credit-name input{
+    width: 100%;
+    height: 13%;
+    font-size: 1vw;
+}
+
+.credit-number p{
+    font-size: 1vw;
+    margin-bottom: 2%;
+    }
+
+.credit-number input{
+    width: 100%;
+    height: 13%;
+    font-size: 1vw;
+}
+
+.date-cvv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.credit-date p{
+    font-size: 1vw;
+    margin-bottom: 2%;
+}
+
+.credit-date input{
+    width: 80%;
+    height: 50px;
+    font-size: 1vw;
+}
+
+.credit-cvv p{
+    font-size: 1vw;
+    margin-bottom: 2%;
+}
+
+.credit-cvv input{
+    width: 100%;
+    height: 50px;
+    font-size: 1vw;
+}
+
+.order-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.credit-order{
+    text-align: center;
+    background-color: var(--second-theme);
+    border-radius: 30px;
+    border-width: 0;
+    padding: 2%;
+    height: 60px;
+    width: 50%;
+    margin: 5%;
+    font-size: 1.5vw;
+    color: white;
+}
+
+.method {
+  grid-area: method;
+  margin: 0 10%;
+}
+
+.method-stuff {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.visa-method {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #161616;
+  width: 40%;
+  height: 140px;
+  border-radius: 30px;
+  border-style: solid;
+  border-color: var(--second-theme);
+  border-width: 5px;
+  margin: 0 3% 0 0;
+}
+
+.visa-method img{
+width: 80%;
+}
+
+.paypal-method {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #161616;
+  width: 40%;
+  height: 140px;
+  border-radius: 30px;
+}
+
+.paypal-method img{
+width: 75%;
+}
+
+.phone-box{
+    display: none;
+}
+
+.phone-credit{
+    display: none;
+}
+
+@media screen and (max-width: 1600px) {
+    .product-game h1 {
+        font-size: 1vw;
+        position: relative;
+        right: 10%;
+      }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .credit-name input{
+        width: 100%;
+        height: 15%;
+        font-size: 1vw;
+    }
+
+    .credit-number input{
+        width: 100%;
+        height: 15%;
+        font-size: 1vw;
+    }
+
+    .credit-date input{
+        width: 80%;
+        height: 30px;
+        font-size: 1vw;
+    }
+    .credit-cvv input{
+        width: 100%;
+        height: 30px;
+        font-size: 1vw;
+    }
+
+    .discount input{
+        background-color: transparent;
+        border-radius: 15px;
+        border-style: solid;
+        border-color: #4D4D4D;
+        padding: 2%;
+        height: 40px;
+        width: 60%;
+        font-size: 1vw;
+        border-width: 3px;
+        color: #4D4D4D;
+    }
+    
+    .discount button{
+        background-color: transparent;
+        border-radius: 15px;
+        border-style: solid;
+        border-color: #4D4D4D;
+        color: #4D4D4D;
+        font-weight: 700;
+        padding: 2%;
+        height: 40px;
+        width: 23%;
+        border-width: 3px;
+        font-size: 1vw;
+    }
+
+    .credit-order{
+        text-align: center;
+        background-color: var(--second-theme);
+        border-radius: 15px;
+        border-width: 0;
+        padding: 2%;
+        height: 40px;
+        width: 60%;
+        margin: 5%;
+        font-size: 1.5vw;
+        color: white;
+    }
+
+    .credit-info{
+        position: relative;
+        top: -5px;
+        background-color: #101010;
+        margin: 0 5%;
+        height: 30%;
+        border-radius: 0 0 20px 20px;
+    }
+    
+}

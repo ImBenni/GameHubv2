@@ -1,0 +1,90 @@
+@media screen and (max-width: 800px) {
+    main {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 50px auto auto;
+      grid-template-areas:
+        ". return ."
+        ". platform-row ."
+        ". platform-row .";
+        margin: 20px
+    }
+    body {
+      grid-template-rows: auto 1200px auto;
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas:
+        "headerarea headerarea headerarea"
+        "mainarea mainarea mainarea"
+        "footerarea footerarea footerarea";
+    }
+  
+    header {
+      padding: 0px;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+  
+    footer {
+      bottom: 0;
+      position: sticky;
+    }
+  
+    .phone_bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2% 5%;
+    }
+  
+    .phone_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2% 5%;
+    }
+    .phone_header a {
+      text-align: center;
+    }
+  
+    .phone_header img {
+      width: 50%;
+    }
+  
+    .phone_logo {
+      width: 20%;
+    }
+  
+    .top_header {
+      display: none;
+    }
+    .main_buttons {
+      display: none;
+    }
+  
+    .phone_top_frame {
+      display: inline;
+      grid-area: pTop;
+    }
+
+    .genre-text{
+    font-size: 3vw;
+    }
+
+    .platform-text{
+        font-size: 3vw;
+    }
+
+    .return_arrow{
+        max-width: 60%;
+    }
+
+    .genre-row{
+        margin-left: 5%;
+    }
+
+    .genre-row img{
+        width: 21%;
+    }
+    
+}

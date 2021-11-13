@@ -25,10 +25,13 @@ body {
 
 header {
   grid-area: headerarea;
+  position: sticky;
+  top: 0;
   background-color: var(--pure-background);
-  padding: 26px
+  padding: 26px;
   /* grid-column: 1/4;
   grid-row: 1/1; */
+  z-index: 2;
 }
 
 main {
@@ -37,7 +40,6 @@ main {
 
 footer {
   grid-area: footerarea;
-  position: relative;
   bottom: 0;
   background-color: var(--pure-background);
 }
@@ -47,3 +49,9 @@ footer {
     margin: 3%;
     justify-content: center;
 }
+
+.phone_header{
+    display: none;
+}
+
+

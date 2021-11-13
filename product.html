@@ -8,7 +8,7 @@
       name="description"
       content="Buy and Resell games for a cheap and stable price only from GameHUB!"
     />
-    <title>GameHub | Product</title>
+    <title>Product | GameHub</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/newheader.css" />
     <link rel="stylesheet" href="./css/product.css" />
@@ -24,8 +24,8 @@
     <header>
       <div class="top_header">
         <div class="logo">
-          <img class="logoimg" src="./images/logo.png" alt="Logo" />
-          <img class="textlogo" src="./images/GAMEHUB.png" alt="Logo" />
+          <img class="logoimg" onclick="window.location.href='index.html';" src="./images/logo.png" alt="Logo" />
+          <img class="textlogo" onclick="window.location.href='index.html';" src="./images/GAMEHUB.png" alt="Logo" />
         </div>
         <div class="top_side_header">
           <div class="search">
@@ -45,11 +45,11 @@
           </div>
           <div class="TopButtons">
             <div class="sign_in">
-              <img class="account" src="images/account.png" alt="" />
+              <img class="account" onclick="window.location.href='account.html';" src="images/account.png" alt="" />
               <!-- <img class="signicon" src="images/SignIn.png" alt="" /> -->
             </div>
             <div class="cartholder">
-              <img class="cart" src="images/cart.png" alt="" />
+              <img class="cart" onclick="window.location.href='checkout.html';" src="images/cart.png" alt="" />
             </div>
             <div class="menyholder">
               <img class="meny" src="images/Menu.png" alt="" />
@@ -59,23 +59,23 @@
       </div>
 
       <div class="phone_header">
-        <a class="phone_menu" href=""><img src="images/Menu.png" alt=""></a>
-        <a class="phone_logo" href=""><img src="images/logo.png" alt=""></a>
-        <a class="phone_cart" href=""><img src="images/cart.png" alt=""></a>
+        <a class="phone_menu" href=""><img src="images/Menu.png" alt="" /></a>
+        <a class="phone_logo" href="index.html"><img src="images/logo.png" alt="" /></a>
+        <a class="phone_cart" href="checkout.html"><img src="images/cart.png" alt="" /></a>
       </div>
-
 
       <nav class="main_buttons">
         <ul>
-          <li class="sell"><a href="sell.html">Sell Games</a></li>
-          <li class="small"><a href="used.html">Used Games</a></li>
-          <li><a href="preorder.html">Pre-orders</a></li>
-          <li><a href="bestseller.html">Bestseller</a></li>
-          <li><a href="genre.html">Genres</a></li>
-          <li class="plus"><a href="plus.html">Discounts with GameHub+</a></li>
+          <li class="sell" onclick="window.location.href='sell.html';"><a href="sell.html">Sell Games</a></li>
+          <li class="small" onclick="window.location.href='used.html';"><a href="used.html">Used Games</a></li>
+          <li class="preorder" onclick="window.location.href='preorder.html';"><a href="preorder.html">Pre-orders</a></li>
+          <li class="bestseller" onclick="window.location.href='bestseller.html';"><a href="bestseller.html">Bestseller</a></li>
+          <li class="genre" onclick="window.location.href='genre.html';"> <a href="genre.html">Genres</a></li>
+          <li class="plus" onclick="window.location.href='plus.html';"><a href="plus.html">Discounts with GameHub+</a></li>
         </ul>
       </nav>
     </header>
+    
     <main>
       <section class="return_line">
         <img class="return_arrow" src="images/ArrowLeft.png" alt="" />
@@ -102,7 +102,7 @@
         <div class="info""><h2>BACK 4 BLOOD</h2>
           <div class="info_line"></div>
           <h1>59.99$</h1>
-          <button>ORDER NOW</button>
+          <button  onclick="window.location.href='checkout.html';">ORDER NOW</button>
           <img src="images/payment-methods.png" alt="" />
         </div>
       </section>
@@ -148,8 +148,8 @@
     <footer>
       <section class="phone_buy_section">
         <h2>35 $</h2>
-        <button class="phone_sell">Sell</button>
-        <button class="phone_buy">Buy Now</button>
+        <button onclick="window.location.href='sell.html';" class="phone_sell">Sell</button>
+        <button onclick="window.location.href='checkout.html';" class="phone_buy">Buy Now</button>
       </section>
     <div class="phone_bottom">
       <a class = "phone_home" href=""><img src="images/PhoneHome.png" alt=""></a>

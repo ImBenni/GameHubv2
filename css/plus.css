@@ -1,0 +1,162 @@
+main {
+  display: grid;
+  grid-template-rows: 8% auto auto;
+  grid-template-columns: auto 85% auto;
+  grid-template-areas:
+    ". return ."
+    ". main-box ."
+    ". . .";
+}
+
+.plus {
+  background-color: #36eeff;
+}
+
+.plus a {
+  color: black;
+}
+
+.plus:hover {
+  background-color: #36eeff;
+}
+
+.phone_bottom {
+  display: none;
+}
+
+.return_line {
+  grid-area: return;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  /* background-color: chartreuse; */
+  margin-top: 2%;
+  height: 20%;
+}
+
+.return_arrow {
+  max-width: 45px;
+  margin-right: 10px;
+}
+
+.return_line h2 {
+  font-size: 2vw;
+  font-weight: 500;
+  padding-right: 1%;
+}
+
+.line {
+  background-color: #0d0d0d;
+  max-width: 80%;
+  width: 70%;
+  height: 15%;
+  margin-left: 10px;
+}
+
+.main-box {
+  grid-area: main-box;
+  display: flex;
+  background-color: #0c0c0c;
+  border-radius: 70px;
+}
+
+.first-box{
+    display: flex;
+    flex-direction: column;
+    margin: 0% 3%;
+    width: 80%;
+}
+
+.first-box h1{
+    color: var(--second-theme);
+    font-size: 4vw;
+    margin: 2% 0%;
+}
+
+.first-box h3{
+    font-weight: 400;
+    font-size: 2vw;
+}
+
+.plus-line{
+    background-color: #D6D6D6;
+    width: 80%;
+    height: 0.8%;
+}
+
+.plus-buttons{
+    display: flex;
+    justify-content:left;
+    margin-top: 5%;
+}
+
+.plus-monthly{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 8px;
+    border-color: var(--main-theme);
+    padding: 1%;
+    border-style: solid;
+    border-radius: 30px;
+    width: 35%;
+}
+
+.plus-monthly h2{
+    margin: 0;
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+
+.plus-monthly h4{
+    margin: 0;
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.plus-monthly:hover{
+background-color: #d6ab33;
+}
+
+.plus-annual{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-theme);
+    border-width: 8px;
+    padding: 1%;
+    border-radius: 30px;
+    width: 35%;
+}
+
+.plus-annual h2{
+    margin: 0;
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+
+.plus-annual h4{
+    margin: 0;
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.second-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3%;
+    position: relative;
+    bottom: 10%;
+}
+
+.second-box img{
+    margin-top: 3%;
+    width: 20vw;
+}

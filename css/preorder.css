@@ -1,0 +1,121 @@
+main {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto 85% auto;
+  grid-template-areas:
+    ". return ."
+    ". first-row ."
+    ". first-row .";
+}
+
+.phone_bottom {
+  display: none;
+}
+
+.preorder {
+  background-color: #ffffff;
+}
+
+.preorder a {
+  color: black;
+}
+
+.preorder:hover {
+    background-color: #ffffff;
+  }
+  
+
+.return_line {
+  grid-area: return;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  /* background-color: chartreuse; */
+  margin-top: 1%;
+  height: 60%;
+}
+
+.return_arrow {
+  max-width: 45px;
+  margin-right: 10px;
+}
+
+.return_line h2 {
+  font-size: 1.8vw;
+  font-weight: 500;
+}
+
+.line {
+  background-color: #0d0d0d;
+  max-width: 80%;
+  width: 80%;
+  height: 10%;
+  margin-left: 10px;
+}
+
+.preorder-row {
+  grid-area: first-row;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.pre-game {
+  background-color: var(--pure-background);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 20px 0px 0px;
+  margin-right: 10%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.game-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game-brand h1 {
+  text-align: center;
+  margin: 0px;
+  font-size: 20px;
+}
+
+.game-brand h3 {
+  color: #9e9e9e;
+  font-size: 10px;
+  margin-left: 8%;
+}
+
+.game-brand img {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.pre-price {
+  position: relative;
+  bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pre-price h2 {
+  font-size: 15px;
+  margin-left: 8%;
+}
+
+.pre-price button {
+  color: white;
+  background-color: transparent;
+  border-style: solid;
+  border-color: var(--second-theme);
+  border-width: 3px;
+  padding: 8px;
+  border-radius: 12px;
+  font-size: 20px;
+  margin-left: 5%;
+}

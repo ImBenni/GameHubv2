@@ -1,169 +1,83 @@
-:root {
-  --pure-background: #0d0d0d;
-  --background-color: #1d1d1d;
-  --background-shade: #292929;
-  --main-theme: #ffc424;
-  --second-theme: #2454ff;
-}
-
-body {
-  background-color: var(--background-color);
-  font-family: "Montserrat", sans-serif;
-  margin: 0px;
+main {
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
-  color: white;
-}
-
-main{
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
   grid-template-areas:
-  "new . rec"
-  "new . ."
-  ". . bestseller";
+    "new . ."
+    "new . ."
+    ". . .";
 }
 
-.NewReleases {
-  grid-area: new;
-  margin-left: 150px;
-  font-size: 3.8rem;
-  font-weight: 800;
-  width:30%;
-  height: 45%;
+.phone_bottom {
+  display: none;
 }
 
-.MainGame {
-  }
+.return_line {
+  grid-area: return;
 
-.MainGameImg {
-  width: 100%;
-  cursor: pointer;
-}
-
-.ArrowRight{
-  cursor: pointer;
-  position: absolute;
-  width: 3%;
-  /* transform: translateY(400%); */
-}
-
-.ArrowLeft{
-  cursor: pointer;
-  position: absolute;
-  width: 3%;
-  /* transform: translateY(400%); */
-}
-
-.game_tab{
   display: flex;
-  height: 9%;
-}
-
-.GameName {
-  width: 100%;
   align-items: center;
-  color: white;
-  background-color: #0d0d0d;
-  border-width: 0px;
-  text-align: left;
-  font-size:2.5rem;
-  cursor: pointer;
-
-}
-
-.GameName:hover {
-  background-color: var(--background-shade);
-}
-
-
-.GamePrice {
-  width: 100px;
-  align-items: center;
-  color: white;
-  font-size: 40px;
-  background-color: var(--second-theme);
-  border-width: 0px;
-  cursor: pointer;
-}
-
-
-.Recommended {
-  grid-area: rec;
-  font-size: 2.6rem;
-  font-weight: 800;
-  color: var(--main-theme);
-}
-
-.rec_row{
-  flex: 1;
-  display: flex;
-  flex-direction: row;
   justify-content: left;
-}
-
-.small_game_tab{
-  display: flex;
+  flex-direction: row;
+  /* background-color: chartreuse; */
+  margin-top: 2.5%;
   height: 20%;
 }
 
-.game_one{
-  margin-right: 5px;
+.return_arrow {
+  max-width: 45px;
+  margin-right: 10px;
 }
 
-.game_one button {
-  /* display: flex; */
-  /* flex-direction: row; */
+.return_line h2 {
+  font-size: 2vw;
+  font-weight: 500;
+  padding-right: 1%;
 }
 
-.game_one img{
-  width: 200px;
-}
-
-.row_game_price{
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: white;
-  font-size: 20px;
-  background-color: var(--second-theme);
-  border-width: 0px;
-  cursor: pointer;
-}
-
-.row_game_name{
-  align-items: center;
-  width: 100%;
-  padding-left: 10px;
-  color: white;
-  font-size: 20px;
+.line {
   background-color: #0d0d0d;
-  border-width: 0px;
-  cursor: pointer;
+  max-width: 80%;
+  width: 70%;
+  height: 8px;
+  margin-left: 10px;
 }
 
-.row_game_name:hover {
-  background-color: var(--background-shade);
-}
-
-.bestseller-section {
-  grid-area: bestseller;
-  font-size: 2.6rem;
-  font-weight: 800;
-  color: white;
-  width: fit-content;
-}
-
-.best_row{
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-}
-
-.row_games{
+.new-release{
+  grid-area: new;
   display: flex;
   flex-direction: column;
-  width: fit-content;
+}
+
+.new-game{
+  width: 40%;
+}
+
+/* .arrows img{
   position: relative;
-  bottom: 620px;
-  left: 800px;
+  top: 500px;
+  width: 3%;
+} */
+
+
+.game-img{
+  width: 100%;
+}
+
+.new-text{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0D0D0D;
+  
+}
+
+.
+
+.new-text h1{
+  background-color: var(--second-theme);
+  width: 12%;
+  font-size: 2vw;
+  padding: 4%;
+  margin: 0;
 }

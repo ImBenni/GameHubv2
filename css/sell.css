@@ -209,3 +209,12 @@ main {
 .phone-box{
   display:none;
 }
+
+.sell{
+  background-color: #ede12f;
+  
+}
+
+.sell a{
+  color: black;
+}

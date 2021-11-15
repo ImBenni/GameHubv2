@@ -9,9 +9,10 @@
       content="Buy and Resell games for a cheap and stable price only from GameHUB!"
     />
     <title>GameHub | Home</title>
-    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/newheader.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/index-phone.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -114,18 +115,117 @@
       </nav>
     </header>
     <main>
-      
       <section class="new-release">
-        <h2>NEW RELEASES</h2>
-        <div class="new-game">
-          <!-- <div class="arrows">
-            <img class="left-arrow" src="images/ArrowLeft.png" alt="">
-            <img class="right-arrow" src="images/ArrowRight.png" alt="">
-          </div> -->
-          <img class="game-img" src="images/Battlefield.png" alt="">
+        <h1>NEW RELEASES</h1>
+        <div class="new-game" onclick="window.location.href='product.html';">
+          <img class="game-img" src="images/Battlefield.png" alt="" />
           <div class="new-text">
             <h2>Battlefield 2042</h2>
-            <h1>$70</h1>
+            <h3>$70</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="side-row">
+        <section class="recommended">
+          <h1>RECOMMENDED FOR YOU</h1>
+          <div class="rec-row">
+            <div onclick="window.location.href='product.html';" class="row-game">
+              <img src="images/Back4Blood.png" alt="" />
+              <div class="row-text">
+                <h2>Back 4 Blood</h2>
+                <h3>$59</h3>
+              </div>
+            </div>
+
+            <div onclick="window.location.href='product.html';" class="row-game">
+              <img src="images/Cyberpunk.png" alt="" />
+              <div class="row-text">
+                <h2>Cyberpunk 2077</h2>
+                <h3>$49</h3>
+              </div>
+            </div>
+
+            <div onclick="window.location.href='product.html';" class="row-game">
+              <img src="images/BattlefieldV.png" alt="" />
+              <div class="row-text">
+                <h2>Battlefield V</h2>
+                <h3>$39</h3>
+              </div>
+            </div>
+
+            <div onclick="window.location.href='product.html';" class="row-game">
+              <img src="images/SeaOfThieves.png" alt="" />
+              <div class="row-text">
+                <h2>Sea of Thieves</h2>
+                <h3>$49</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bestseller">
+          <h1>BESTSELLER</h1>
+          <div class="rec-row">
+            <div onclick="window.location.href='product.html';" class="row-game">
+              <img src="images/Minecraft.png" alt="" />
+              <div class="row-text">
+                <h2>Minecarft</h2>
+                <h3>$20</h3>
+              </div>
+            </div>
+
+            <div onclick="window.location.href='product.html';" class="row-game">
+              <img src="images/Sims4.png" alt="" />
+              <div class="row-text">
+                <h2>Sims 4</h2>
+                <h3>$39</h3>
+              </div>
+            </div>
+
+            <div onclick="window.location.href='product.html';" class="row-game">
+              <img src="images/DeadByDaylight.png" alt="" />
+              <div class="row-text">
+                <h2>Dead by Daylight</h2>
+                <h3>$25</h3>
+              </div>
+            </div>
+
+            <div onclick="window.location.href='product.html';" class="row-game">
+              <img src="images/NoManSky.png" alt="" />
+              <div class="row-text">
+                <h2>No Man's Sky</h2>
+                <h3>$40</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="phone-box">
+        <img class="phone-logo" src="images/GAMEHUB.png" alt="" />
+
+        <div onclick="window.location.href='product.html';" class="phone-game" >
+          <img src="images/PhoneBacvk4Blood.png" alt="" />
+          <div class="game-container">
+            <h1>Back 4 Blood</h1>
+            <h2>$59</h2>
+          </div>
+        </div>
+
+        <div onclick="window.location.href='product.html';" class="phone-game" >
+          <img src="images/PhoneFarCry.png" alt="" />
+          <div class="game-container">
+            <h1>Far Cry 6</h1>
+            <h2>$59</h2>
+          </div>
+        </div>
+
+        <div onclick="window.location.href='product.html';" class="phone-game" >
+          <img src="images/PhoneNewWorld.png" alt="" />
+          <div class="game-container">
+            <h1>New World</h1>
+            <h2>$59</h2>
           </div>
         </div>
       </section>
@@ -133,13 +233,13 @@
     </main>
     <footer>
       <div class="phone_bottom">
-        <a class="phone_home" href=""
+        <a class="phone_home" href="index.html"
           ><img src="images/PhoneHome.png" alt=""
         /></a>
         <a class="phone_search" href=""
           ><img src="images/PhoneSearch.png" alt=""
         /></a>
-        <a class="phone_account" href=""
+        <a class="phone_account" href="account.html"
           ><img src="images/PhoneAcc.png" alt=""
         /></a>
       </div>

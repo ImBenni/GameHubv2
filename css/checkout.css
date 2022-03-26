@@ -47,7 +47,7 @@ main {
   justify-content: left;
   flex-direction: row;
   /* background-color: chartreuse; */
-  margin-top: 4%;
+  margin-top: 40px;
   height: 20%;
 }
 
@@ -273,6 +273,7 @@ margin-bottom: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .credit-order{

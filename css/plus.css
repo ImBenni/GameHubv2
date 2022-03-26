@@ -9,15 +9,12 @@ main {
 }
 
 .plus {
-  background-color: #36eeff;
+  background-color: var(--second-theme);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.9); 
 }
 
 .plus a {
   color: black;
-}
-
-.plus:hover {
-  background-color: #36eeff;
 }
 
 .phone_bottom {
@@ -60,6 +57,8 @@ main {
   display: flex;
   background-color: #0c0c0c;
   border-radius: 70px;
+
+  margin: 1% 5%;
 }
 
 .first-box{
@@ -71,13 +70,14 @@ main {
 
 .first-box h1{
     color: var(--second-theme);
-    font-size: 4vw;
+    font-size: 2.5vw;
     margin: 2% 0%;
 }
 
 .first-box h3{
     font-weight: 400;
-    font-size: 2vw;
+    font-size: 1.5vw;
+    width: 80%;
 }
 
 .plus-line{

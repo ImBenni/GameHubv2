@@ -4,12 +4,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin: 20px 70PX;
 }
 
 .logo {
   cursor: pointer;
   display: flex;
   /* background-color: red; */
+ 
 }
 
 .logo img {
@@ -111,8 +113,7 @@
 nav {
   /* background-color: aqua; */
   max-width: 100%;
-  top: 26px;
-  position: relative;
+  margin: 0px 70px;
 }
 
 nav ul {
@@ -204,10 +205,6 @@ nav ul li:hover {
 } 
 
 @media screen and (max-width: 1330px){
-  nav {
-    top: 35px;
-    position: relative;
-  }
   nav ul{
     width: 80%;
     height: 30px;
@@ -223,10 +220,6 @@ nav ul li:hover {
 }
 
 @media screen and (max-width: 1700px){
-  nav {
-    top: 26px;
-    position: relative;
-  }
   nav ul{
     width: 70%;
     height: 36px;

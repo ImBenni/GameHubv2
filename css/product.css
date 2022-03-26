@@ -1,42 +1,12 @@
 main {
   display: grid;
   grid-template-rows: auto 85% auto;
-  grid-template-columns: 3% 1.5fr 1fr 3%;
+  grid-template-columns: 15% 1.5fr 1fr 15%;
   margin: 1% 0px 6% 0px;
   grid-template-areas:
     ". return return ."
     ". gallery info ."
     ". desc desc .";
-}
-
-@media screen and (max-width: 1025px) {
-  main {
-    grid-template-rows: 10% 70% 10%;
-    margin: 0px 0px 0px 0px;
-  }
-  .return_line {
-    margin-top: 3%;
-    max-height: 40%;
-  }
-
-  body {
-    grid-template-rows: 169px 60% auto;
-  }
-}
-
-@media screen and (max-width: 1441px) {
-  main {
-    grid-template-rows: 10% 70% 10%;
-    margin: 0px 0px 0px 0px;
-  }
-  .return_line {
-    margin-top: 2%;
-    max-height: 40%;
-  }
-
-  body {
-    grid-template-rows: 169px 1fr auto;
-  }
 }
 
 .return_line {
@@ -125,7 +95,7 @@ main {
 }
 
 .info h2 {
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 .info_line {
@@ -138,7 +108,7 @@ main {
 .info h1 {
   position: relative;
   bottom: 3%;
-  font-size: 5vw;
+  font-size: 3vw;
 }
 
 .info button {

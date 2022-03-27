@@ -40,7 +40,6 @@ main {
 footer {
   grid-area: footerarea;
   bottom: 0;
-  background-color: var(--pure-background);
 }
 
 .copyright{

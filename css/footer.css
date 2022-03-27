@@ -1,0 +1,20 @@
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 10%;
+    background-color: #0d0d0d;
+    height: 10rem;
+    font-size: 1vw;
+    color: #8b8b8b;
+}
+
+@media screen and (max-width: 800px) {
+    .footer-container{
+        display: none;
+    }
+    footer{
+        background-color: var(--pure-background);
+    }
+}

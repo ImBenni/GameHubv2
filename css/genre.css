@@ -32,7 +32,6 @@ main {
   align-items: center;
   justify-content: left;
   flex-direction: row;
-  /* background-color: chartreuse; */
   margin-top: 1%;
   height: 60%;
 }
@@ -43,15 +42,16 @@ main {
 }
 
 .genre-text {
+  cursor:default;
   color: gray;
+  font-weight: 800;
   padding-right: 1%;
   font-size: 1.8vw;
-  font-weight: 800;
   text-decoration: none;
 }
 
 .platform-text {
-  color: white;
+  color: var(--second-theme);
   padding-right: 1%;
   font-size: 1.8vw;
   font-weight: 500;
@@ -60,7 +60,7 @@ main {
 
 .platform-text:hover {
   transition: 0.1s;
-  color: gray;
+  color: #0028b3;
 }
 
 .return_line h2 {
@@ -85,6 +85,12 @@ main {
 }
 
 .genre-row img {
+  cursor: pointer;
   width: 17%;
   margin: 0 1% 2% 1%;
+  transition: .2s;
+}
+
+.genre-row img:hover{
+  transform: scale(1.1);
 }

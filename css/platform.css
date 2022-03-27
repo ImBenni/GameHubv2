@@ -1,12 +1,16 @@
 main {
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 100px auto auto;
   grid-template-columns: auto 85% auto;
   grid-template-areas:
     ". return ."
     ". platform-row ."
-    ". platform-row .";
+    ". . .";
 }
+
+body{
+  height: 1200px;
+  }
 
 .platform {
   background-color: #ffffff;
@@ -33,7 +37,7 @@ main {
   flex-direction: row;
   /* background-color: chartreuse; */
   margin-top: 1%;
-  height: 60%;
+  height: 60px;
 }
 
 .return_arrow {
@@ -42,7 +46,7 @@ main {
 }
 
 .genre-text {
-  color: white;
+  color: var(--main-theme);
   padding-right: 1%;
   font-size: 1.8vw;
   font-weight: 500;
@@ -51,15 +55,16 @@ main {
 
 .platform-text {
   color: gray;
+  cursor:default;
   padding-right: 1%;
   font-size: 1.8vw;
   font-weight: 800;
   text-decoration: none;
 }
 
-.platform-text:hover {
+.genre-text:hover {
   transition: 0.1s;
-  color: gray;
+  color: #b3860c;
 }
 
 .return_line h2 {
@@ -78,13 +83,21 @@ main {
 
 .platform-row {
   grid-area: platform-row;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
   margin-left: 3%;
 }
 
 .platform-row img {
   width: 21%;
-  margin: 0 1% 2% 1%;
+  margin: 1%;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.platform-row img:hover{
+  transform: scale(1.1);
 }

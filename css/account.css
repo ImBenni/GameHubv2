@@ -96,10 +96,19 @@ main {
   margin-top: 5%;
 }
 
+.sign-in:hover{
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.9); 
+}
+
 .create-user {
   background-color: var(--second-theme);
   border-width: 0;
+  transition: .1s;
   color: white;
+}
+
+.create-user:hover{
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.9); 
 }
 
 .signin-box {

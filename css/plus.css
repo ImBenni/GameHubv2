@@ -1,6 +1,6 @@
 main {
   display: grid;
-  grid-template-rows: 8% auto auto;
+  grid-template-rows: 8% auto 400px;
   grid-template-columns: auto 85% auto;
   grid-template-areas:
     ". return ."
@@ -30,7 +30,7 @@ main {
   flex-direction: row;
   /* background-color: chartreuse; */
   margin-top: 2%;
-  height: 20%;
+  height: 60%;
 }
 
 .return_arrow {
@@ -41,14 +41,15 @@ main {
 .return_line h2 {
   font-size: 2vw;
   font-weight: 500;
-  padding-right: 1%;
+
+  width: 18%
 }
 
 .line {
   background-color: #0d0d0d;
   max-width: 80%;
-  width: 70%;
-  height: 15%;
+  width: 80%;
+  height: 5px;
   margin-left: 10px;
 }
 
@@ -118,10 +119,12 @@ main {
 }
 
 .plus-monthly:hover{
-background-color: #d6ab33;
+/* background-color: var(--main-theme); */
+box-shadow: 0 0 15px rgba(255, 255, 255, 0.9); 
 }
 
 .plus-annual{
+    color: black;
     margin-left: 5%;
     display: flex;
     flex-direction: column;
@@ -144,6 +147,10 @@ background-color: #d6ab33;
     margin: 0;
     font-size: 3vw;
     font-weight: 300;
+}
+
+.plus-annual:hover{
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.9); 
 }
 
 .second-box{

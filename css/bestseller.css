@@ -8,6 +8,7 @@ main {
     ". first-row .";
 }
 
+
 .phone_bottom {
   display: none;
 }
@@ -53,9 +54,11 @@ main {
   grid-area: first-row;
   display: flex;
   flex-direction: row;
+
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  margin-bot: 0;
 }
 
 .pre-game {

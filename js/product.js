@@ -37,7 +37,7 @@ function createPage(product) {
     `<img src="${product.images[1].src}">`
 
 
-    for (let i = 2; i < product.images.length; i++) {
+    for (let i = 2; i < 5; i++) {
         smallGallery.innerHTML += 
         `<img src="${product.images[i].src}">`
     }

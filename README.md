@@ -31,4 +31,5 @@ Please DM me at Discord and we can further discuss it there.
 ## Contact
 
 So far I only use Discord, the user is: 
-*Benni#4739*
+
+**Benni#4739**

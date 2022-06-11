@@ -1,6 +1,6 @@
 # Your project title
 
-![image](https://imgur.com/a/0iz6sz9)
+![image](https://i.imgur.com/PW8xC9y.png)
 
 A simple overview of the use/purpose of the project.
 

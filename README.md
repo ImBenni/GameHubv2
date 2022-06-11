@@ -1,70 +1,34 @@
-# Your project title
+# GameHub Noroff Cross-Course Project
 
 ![image](https://i.imgur.com/PW8xC9y.png)
-
-A simple overview of the use/purpose of the project.
+ 
+The purpose of this site is to buy and sell virtual games. You could also preview and pre-order upcoming games.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+We were tasked with coding our fully designed website from a former project. We also had to make everything function with Wordpress so that adding new products through wordpress would automatically appear.
 
-You can add some bullet points if you'd like to:
+The site's foundation coding-wise is not the most ideal due to it was made when I was less experienced. It could have been much different if I worked on this project again.
 
-- List item 1
-- List item 2
-- List item 3
-
-## Built With
-
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
 
 ## Getting Started
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+If you in someway wish to install this, just follow this:
 
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-```
-
-2. Install the dependencies:
-
-```
-npm install
-```
-
-### Running
-
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
-
-```bash
-npm run start
+git clone git@github.com:ImBenni/GameHubv2.git
 ```
 
 ## Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+When making any changes to this, before going public with it please send it to me so I can review it. 
+Please DM me at Discord and we can further discuss it there.
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
-
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
+So far I only use Discord, the user is: 
+*Benni#4739*
